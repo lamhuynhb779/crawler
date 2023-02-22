@@ -1,0 +1,1 @@
+http://shivammehta.me/blog/2020/01/09/boolean-retrieval-model-and-inverted-indexes-in-information-retrieval/?i=1
