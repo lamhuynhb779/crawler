@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    build: .
+    command: python3 main.py
+    depends_on:
+      - db
+    volumes:
+      - .:/usr/app/src
+  db:
+    image: mysql:5.7
+    restart: always
+    ports:
+      - "32001:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: "password"
+      MYSQL_DATABASE: "kantai"
+      MYSQL_USER: "kantai_user"
+      MYSQL_PASSWORD: "password"
